@@ -5,31 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RENKEU PORTALDATA</title>
     <style>
-        /* Reset margin dan padding bawaan browser */
+        /* Reset default margin & padding */
         html, body {
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #0f172a; /* Warna latar gelap agar transisi mulus */
+            background-color: #0f172a; /* Warna latar gelap sesuai tema portal */
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
-        /* Container pembungkus agar terkunci di GitHub */
+        /* Container pembungkus utama */
         .iframe-container {
             position: absolute;
-            top: 0;
             left: 0;
             bottom: 0;
             right: 0;
             width: 100%;
-            height: 100%;
+            
+            /* MEMBERIKAN JARAK PADA BAGIAN ATAS */
+            top: 15px; /* <--- Ubah angka ini (misal 10px, 15px, atau 20px) sesuai selera Anda */
+            height: calc(100% - 15px); /* Menyesuaikan tinggi agar sisa layar tetap pas */
+            
             border: none;
             z-index: 9999;
         }
 
-        /* Mengatur Iframe agar responsif dan fullscreen */
+        /* Mengatur Iframe agar penuh di dalam container */
         iframe {
             width: 100%;
             height: 100%;
@@ -51,7 +54,7 @@
     </div>
 
     <script>
-        console.log("RENKEU-PORTALDATA");
+        console.log("MANAJEMEN DATA");
     </script>
 </body>
 </html>
